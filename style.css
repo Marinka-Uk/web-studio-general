@@ -79,7 +79,11 @@
     fill: rgba(117, 117, 117, 1);
   }
   
-  
+  .network-icon{
+    width: 20px;
+    height: 20px;
+    fill: rgba(175, 177, 184, 1);
+  }
   .contacts-link{
     color: var(--secondary-text-color);
   } 
@@ -191,6 +195,7 @@
   }
   
   .border{
+    padding: 30px;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),0px 2px 1px rgba(O, 0, 0, 0.2);
 border-radius: 0px 0px 4px
 4px;
@@ -331,15 +336,38 @@ margin-bottom: 30px;}
   background-repeat: no-repeat;
 }
 .icon-arials.item::before
-{background-image:url(./w.s.images/1.png) ; background-repeat: no-repeat;}
+{background-image:url(./img/antenna\ 1.png) ; background-repeat: no-repeat;}
 .icon-clock.item::before{
-  background-image:url(./w.s.images/2.png) ; background-repeat: no-repeat;
+  background-image:url(./img/2.png) ; background-repeat: no-repeat;
 }
 .icon-diagram.item::before{
-  background-image:url(./w.s.images/4.png) ; background-repeat: no-repeat;
+  background-image:url(./img/4.png) ; background-repeat: no-repeat;
 }
 .icon-astronaut.item::before{
-  background-image:url(./w.s.images/3.png) ; background-repeat: no-repeat;
+  background-image:url(./img/3.png) ; background-repeat: no-repeat;
+}
+.network-list{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.network-list a{
+  display: inline-flex;
+justify-content: center;
+align-items: center;
+
+color: rgba(175, 177, 184, 1);
+width: 44px;
+height: 44px;
+}
+.network-list a:hover,
+.network-list a:focus{ background-color: var(--accent-color);
+border-radius: 50%;
+}
+
+.network-list a:hover .network-icon,
+.network-list a:focus .network-icon{
+fill: var(--background-color)
 }
 
 
