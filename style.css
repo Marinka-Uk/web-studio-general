@@ -183,6 +183,12 @@
   .what-we-do{
     display: flex;
     justify-content:space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 70px;
   }
   .img-what-we-do{
     width: 370px;
@@ -410,10 +416,60 @@ I
 .cust-icon a:focus{ background-color: var(--accent-color);
 
 }
-
+.join{
+  position: absolute;
+  color: #FFF;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+margin-left: 918px;
+margin-top: 75px;
+margin-right: 986px;
+margin-bottom: 273px;
+}
 .programs{
   display: flex;
  align-items: center;
  justify-content: center;
- padding-left: 15px;
+}
+.netwr{
+  display: inline-flex;
+justify-content: center;
+align-items: center;
+color: #FFFFFF;
+width: 44px;
+height: 44px;
+
+}
+.pr-list a:hover,
+.pr-list a:focus{
+  background-color: var(--accent-color);
+border-radius: 50%;
+}
+.pr-list  a:hover .netwr,
+.pr-list  a:focus .netwr{
+fill: var(--background-color)}
+
+.what-we-do .text{
+padding: 27px 113px;
+background: rgba(47, 48, 58, 0.80);
+color: #FFF;
+
+text-align: center;
+
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+height: 70px;
+}
+
+.wwd-item{
+  position: relative;
+  width: 370px;
 }
