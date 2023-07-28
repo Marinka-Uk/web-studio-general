@@ -196,6 +196,7 @@
   
   .border{
     padding: 30px;
+    margin: 10px;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),0px 2px 1px rgba(O, 0, 0, 0.2);
 border-radius: 0px 0px 4px
 4px;
@@ -369,61 +370,50 @@ border-radius: 50%;
 .network-list a:focus .network-icon{
 fill: var(--background-color)
 }
-.customers {
 
-background-color: #FFFFFF;
-  width: 200px;
-  height: 400px;
-}
-
-.customers h2{
- 
-width: 297px;
-height: 42px;
-margin-left: auto;
-margin-right: auto;
-font-size: 36px;
-color: #212121;
-text-align: center;
-
-letter-spacing: 1.08px;
+.link-rgl{
+  margin: 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+border: 1px solid #AFB1B8;
+width: 178px;
+ height: 92px; 
+ color: #757575;
 }
 .cust-list{
-
   display: inline-flex;
   text-align: center;
   justify-content: space-between;
  
 }
-.cust{
-  width: 106px;
-  height: 60px;
-  border-radius: 4px;
-border: 1px solid #AFB1B8;
-width: 170px;
-height: 92px;
-flex-shrink: 0;
-margin-bottom: 50px;
-margin-top: 150px;
-margin-left: 30px;
 
-  flex-shrink: 0;
-  color: rgba(175, 177, 184, 1);
-}
 .cust-icon{
-  
+fill: currentColor;
 width: 106px;
 height: 115px;
 flex-shrink: 0;
 color: #AFB1B8;
+
 }
 
-.cust a:hover .cust-icon
-.cust a:focus .cust-icon
+.link-rgl:hover
+.link-rgl:focus
+ {color: var(--accent-color);
+border: 1px solid var(--accent-color)}
+I
 {
   fill: var(--background-color)
 }
 .cust  a:hover,
 .cust-icon a:focus{ background-color: var(--accent-color);
 
+}
+
+.programs{
+  display: flex;
+ align-items: center;
+ justify-content: center;
+ padding-left: 15px;
 }
