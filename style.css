@@ -96,7 +96,7 @@ height: auto;
   } 
   
   /* герой */
-  .hero{
+  .hero section{
   background-color: var(--hero-background);
   padding-top: 200px;
   padding-bottom: 165px;
@@ -473,3 +473,27 @@ height: 70px;
 }
 /* модальне вікно */
 
+.backdrop{
+  position: fixed;
+  background: rgba(0, 0, 0, 0.20);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .modal{
+  width: 528px;
+  height: 581px;
+  background-color: #FFFFFF;
+  position: relative;}
+
+  .close {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  position: absolute;
+  right: 8px;
+  top: 8px;}
