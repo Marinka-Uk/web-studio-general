@@ -6,6 +6,13 @@
     --background-color: #FFFFFF;
     --hero-background: #2F303A;
   }
+
+  img{
+display: block;
+max-width:100%;
+height: auto;
+  }
+
   html{
     box-sizing: border-box;
   }
@@ -184,11 +191,12 @@
     display: flex;
     justify-content:space-between;
     align-items: center;
+  }
+  .what-we-do div{
     position: absolute;
     left: 0;
-    bottom: 0;
     right: 0;
-    height: 70px;
+    bottom: 0;
   }
   .img-what-we-do{
     width: 370px;
@@ -397,25 +405,15 @@ width: 178px;
 
 .cust-icon{
 fill: currentColor;
-width: 106px;
-height: 115px;
-flex-shrink: 0;
-color: #AFB1B8;
+
 
 }
 
-.link-rgl:hover
+.link-rgl:hover,
 .link-rgl:focus
  {color: var(--accent-color);
 border: 1px solid var(--accent-color)}
-I
-{
-  fill: var(--background-color)
-}
-.cust  a:hover,
-.cust-icon a:focus{ background-color: var(--accent-color);
 
-}
 .join{
   position: absolute;
   color: #FFF;
@@ -473,3 +471,5 @@ height: 70px;
   position: relative;
   width: 370px;
 }
+/* модальне вікно */
+
