@@ -98,6 +98,7 @@ height: auto;
   /* герой */
   .hero section{
   background-color: var(--hero-background);
+  background-image: url(./img/w-b.jpg);
   padding-top: 200px;
   padding-bottom: 165px;
   }
@@ -496,4 +497,11 @@ height: 70px;
   flex-shrink: 0;
   position: absolute;
   right: 8px;
-  top: 8px;}
+  top: 8px;
+  display: inline-flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+background-color: #fff;
+border-color: rgba(0, 0, 0, 0.10);
+}
