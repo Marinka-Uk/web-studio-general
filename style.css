@@ -559,7 +559,7 @@ letter-spacing: 0.42px;
 }
 
 .form-btn{
-
+border: none;
   border-radius: 4px;
   margin-top: 20px;
   margin-left: 120px;
