@@ -56,6 +56,7 @@
             <div  class="container">
             <h1>Ефективні рішення для вашого бізнесу </h2>
             <button class="hero-button" type="button">Замовити послугу</button>
+            <button class="open-modal" data-open-modal>Відкрити модалку</button>
         </section>
         </div>
         <!-- переваги -->
@@ -80,13 +81,32 @@
                 <p class="text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
             </li>
         </ul></div>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-backdrop>
         <div class="modal">
-            <button class="close">
+            <button class="close" data-close-modal>
                 <svg width="18" height="18">
                     <use href="./img/symbol-defs.svg#close"></use>
                 </svg>
             </button>
+            <script>
+                const refs = {
+                  openModalBtn: document.querySelector('[data-open-modal]'),
+                  closeModalBtn: document.querySelector('[data-close-modal]'),
+                  backdrop: document.querySelector('[data-backdrop]'),
+                };
+                refs.openModalBtn.addEventListener('click', toggleModal);
+                    refs.closeModalBtn.addEventListener('click', toggleModal);
+              
+                    refs.backdrop.addEventListener('click', logBackdropClick);
+              
+                    function toggleModal() {
+                      refs.backdrop.classList.toggle('is-hidden');
+                    }
+              
+                    function logBackdropClick() {
+                      console.log('Це клік в бекдроп');
+                    }
+                  </script>
             <form>
                 <h2 class="mdl-tittle">Залиште свої дані, ми вам передзвонимо</h2>
                 <ul>
