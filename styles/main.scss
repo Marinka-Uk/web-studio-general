@@ -1,11 +1,8 @@
-:root{
-    --primary-text-color: #212121;
-    --secondary-text-color: #757575;  
-    --logo-color: #000000;
-    --accent-color: #2196F3;
-    --background-color: #FFFFFF;
-    --hero-background: #2F303A;
-  }
+@import './variables'
+@import './_header.scss.'
+
+
+
 
   img{
 display: block;
@@ -41,59 +38,7 @@ height: auto;
   padding-bottom: 94px;
 }
 
-  /* header */
-  .logo {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    
-    color: var(--accent-color);
-  }
-  
-  .logo > span {
-    color: var(--logo-color);
-  }
-  
-  
-  .nav-link,.contacts-link{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-  }
-  
-  .nav-link{
-    color: var(--primary-text-color);
-  
-    padding-top: 32px;
-    padding-bottom: 32px;
-  } 
-  
-  .nav-link:hover,
-  .nav-link:focus,
-  .contacts-link:hover,
-  .contacts-link:focus{
-   color: var(--accent-color);
-  }
-  
-  .contacts-list{
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-  }
-  .contacts-icon{
-    fill: rgba(117, 117, 117, 1);
-  }
-  
-  .network-icon{
-    width: 20px;
-    height: 20px;
-    fill: rgba(175, 177, 184, 1);
-  }
-  .contacts-link{
-    color: var(--secondary-text-color);
-  } 
+
   
   /* герой */
   .hero.section{
@@ -215,7 +160,7 @@ height: auto;
   .border{
     padding: 30px;
     margin: 10px;
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),0px 2px 1px rgba(O, 0, 0, 0.2);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px
 4px;
   }
