@@ -1,0 +1,28 @@
+/* футер */
+.section-footer{
+    padding-bottom: 60px;
+    padding-top: 60px;
+    background-color: #2F303A;
+    
+  }
+  .section-footer .contacts-list{
+    display: block;
+    padding-left: 2px;
+    
+  }
+  
+  .footer{ background-color: var(--hero-background);}
+  .footer .logo>span{color: var(--background-color);}
+  
+  address{
+   font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--background-color);
+  }
+  .footer.contacts-link{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
+  }

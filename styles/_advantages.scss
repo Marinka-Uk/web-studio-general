@@ -1,0 +1,70 @@
+.advantages{
+    display: flex;
+    justify-content: space-between;
+    }
+    
+    
+    .advantages .item{
+      width: 270;
+      padding: 30px;
+    }
+    
+    .advantages .title{
+      font-weight: 700;
+     margin-bottom: 10px;
+    }
+    
+    .advantages .title,
+    .advantages .text{
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      text-transform: uppercase;
+    }
+    
+    .text{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      text-transform: uppercase;
+      font-weight: 400; font-size: 14px;
+      line-height: 24px; 
+      letter-spacing: 0.03em;
+     color: #757575;
+      
+      color: var(--secondary-text-color);
+    }
+    
+    .section-title{
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 42px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    /* Чим ми займаємось */
+    .what-we-do{
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+    }
+    .what-we-do div{
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .img-what-we-do{
+      width: 370px;
+    }
+    .icon-arials.item::before
+{background-image:url(./img/antenna\ 1.png) ; background-repeat: no-repeat;}
+.icon-clock.item::before{
+  background-image:url(./img/2.png) ; background-repeat: no-repeat;
+}
+.icon-diagram.item::before{
+  background-image:url(./img/4.png) ; background-repeat: no-repeat;
+}
+.icon-astronaut.item::before{
+  background-image:url(./img/3.png) ; background-repeat: no-repeat;
+}

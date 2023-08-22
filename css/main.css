@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@impot :root {
+:root {
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --logo-color: #000000;
@@ -7,6 +7,109 @@
   --background-color: #FFFFFF;
   --hero-background: #2F303A;
 }
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  color: var(--accent-color);
+}
+
+.logo > span {
+  color: var(--logo-color);
+}
+
+.nav-link, .contacts-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.nav-link {
+  color: var(--primary-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
+}
+
+.contacts-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+}
+
+.contacts-icon {
+  fill: rgb(117, 117, 117);
+}
+
+.network-icon {
+  width: 20px;
+  height: 20px;
+  fill: rgb(175, 177, 184);
+}
+
+.contacts-link {
+  color: var(--secondary-text-color);
+}
+
+header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-item:not(:first-child),
+.contacts-item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -46,7 +149,15 @@ ul {
   padding-bottom: 94px;
 }
 
-/* герой */
+ul,
+p,
+h2,
+h3 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .hero.section {
   background-color: var(--hero-background);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./img/w-b.jpg);
@@ -96,7 +207,12 @@ h1 {
   background-color: var(--accent-color);
 }
 
-/* переваги */
+.hero {
+  background: rgba(47, 48, 58, 0.4);
+  background-image: url(../img/w-b.jpg);
+  background-repeat: no-repeat;
+}
+
 .advantages {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -169,7 +285,26 @@ h1 {
   width: 370px;
 }
 
-/* наша команда */
+.icon-arials.item::before {
+  background-image: url(./img/antenna\ 1.png);
+  background-repeat: no-repeat;
+}
+
+.icon-clock.item::before {
+  background-image: url(./img/2.png);
+  background-repeat: no-repeat;
+}
+
+.icon-diagram.item::before {
+  background-image: url(./img/4.png);
+  background-repeat: no-repeat;
+}
+
+.icon-astronaut.item::before {
+  background-image: url(./img/3.png);
+  background-repeat: no-repeat;
+}
+
 .team-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,6 +345,42 @@ h1 {
   color: var(--secondary-text-color);
 }
 
+.network-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.network-list a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgb(175, 177, 184);
+  width: 44px;
+  height: 44px;
+}
+
+.network-list a:hover,
+.network-list a:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+.network-list a:hover .network-icon,
+.network-list a:focus .network-icon {
+  fill: var(--background-color);
+}
+
 /* футер */
 .section-footer {
   padding-bottom: 60px;
@@ -244,66 +415,11 @@ address {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.container header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
-header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.contacts-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-}
-
-.nav-item:not(:first-child),
-.contacts-item:not(:first-child) {
-  margin-left: 50px;
-}
-
 .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: 93px;
-}
-
-ul,
-p,
-h2,
-h3 {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .section .our-team {
@@ -348,68 +464,6 @@ nav {
   border-radius: 4px;
   background-position: center;
   margin-bottom: 30px;
-}
-
-.hero {
-  background: rgba(47, 48, 58, 0.4);
-  background-image: url(./w.s.images/Img.jpg);
-  background-repeat: no-repeat;
-}
-
-.icon-arials.item::before {
-  background-image: url(./img/antenna\ 1.png);
-  background-repeat: no-repeat;
-}
-
-.icon-clock.item::before {
-  background-image: url(./img/2.png);
-  background-repeat: no-repeat;
-}
-
-.icon-diagram.item::before {
-  background-image: url(./img/4.png);
-  background-repeat: no-repeat;
-}
-
-.icon-astronaut.item::before {
-  background-image: url(./img/3.png);
-  background-repeat: no-repeat;
-}
-
-.network-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.network-list a {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: rgb(175, 177, 184);
-  width: 44px;
-  height: 44px;
-}
-
-.network-list a:hover,
-.network-list a:focus {
-  background-color: var(--accent-color);
-  border-radius: 50%;
-}
-
-.network-list a:hover .network-icon,
-.network-list a:focus .network-icon {
-  fill: var(--background-color);
 }
 
 .link-rgl {
@@ -522,7 +576,6 @@ nav {
   width: 370px;
 }
 
-/* модальне вікно */
 .backdrop {
   position: fixed;
   background: rgba(0, 0, 0, 0.2);

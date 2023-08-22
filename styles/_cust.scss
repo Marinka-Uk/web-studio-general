@@ -1,0 +1,65 @@
+.link-rgl{
+    margin: 15px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  border: 1px solid #AFB1B8;
+  width: 178px;
+   height: 92px; 
+   color: #757575;
+  }
+  .cust-list{
+    display: inline-flex;
+    text-align: center;
+    justify-content: space-between;
+   
+  }
+  
+  .cust-icon{
+  fill: currentColor;
+  
+  
+  }
+  
+  .link-rgl:hover,
+  .link-rgl:focus
+   {color: var(--accent-color);
+  border: 1px solid var(--accent-color)}
+  
+  .join{
+    position: absolute;
+    color: #FFF;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-left: 518px;
+  margin-top: 75px;
+  margin-right: 986px;
+  margin-bottom: 273px;
+  }
+  .programs{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+  .netwr{
+    display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  width: 44px;
+  height: 44px;
+  
+  }
+  .pr-list a:hover,
+  .pr-list a:focus{
+    background-color: var(--accent-color);
+  border-radius: 50%;
+  }
+  .pr-list  a:hover .netwr,
+  .pr-list  a:focus .netwr{
+  fill: var(--background-color)}

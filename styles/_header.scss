@@ -50,4 +50,34 @@
   .contacts-link{
     color: var(--secondary-text-color);
   } 
+  header{
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
   
+    .header {
+      display: flex;
+      align-items: center;
+    }
+    .header.nav{
+      display: flex;
+    }
+    .contacts-list{
+      display: flex;
+    margin-left: auto;
+    }
+    .nav-item:not(:first-child),
+    .contacts-item:not(:first-child)
+    {
+      margin-left: 50px;
+    }
+    
+    .container header{ 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+      padding-top: 24px;
+      padding-bottom: 25px;
+    
+    }
