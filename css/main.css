@@ -106,6 +106,16 @@
   padding-top: 24px;
   padding-bottom: 25px;
 }
+@media screen and (min-width: 480px) {
+  .container header {
+    background-color: yellow;
+  }
+}
+@media screen and (min-width: 180px) {
+  .container header {
+    background-color: pink;
+  }
+}
 
 img {
   display: block;
@@ -144,6 +154,17 @@ ul {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: aqua;
+}
+@media screen and (min-width: 967px) {
+  .section {
+    background-color: red;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .section {
+    background-color: green;
+  }
 }
 
 ul,
