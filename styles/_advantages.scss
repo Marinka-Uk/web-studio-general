@@ -1,12 +1,19 @@
 .advantages{
+  @media screen and(min-width: $desktop){
     display: flex;
     justify-content: space-between;
+  }
     }
     
     
-    .advantages .item{
-      width: 270;
-      padding: 30px;
+   .item{
+       
+    @media screen and (min-width: $mobile){
+      width: 450px;
+    }
+    @media screen and (min-width: $desktop){
+      width: 270px;
+    }
     }
     
     .advantages .title{
@@ -22,6 +29,9 @@
       text-transform: uppercase;
     }
     
+
+
+
     .text{
       font-weight: 400;
       font-size: 14px;
