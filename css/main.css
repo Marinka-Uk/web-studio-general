@@ -144,7 +144,6 @@ ul {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: aqua;
 }
 
 .container {
@@ -152,6 +151,21 @@ ul {
   padding-right: 15px;
   margin-Left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 786px) {
+  .container {
+    width: 786px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 ul,
@@ -216,18 +230,26 @@ h1 {
   background-repeat: no-repeat;
 }
 
-.advantages {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (min-width: 1200px) {
+  .advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
-.advantages .item {
-  width: 270;
-  padding: 30px;
+@media screen and (min-width: 480px) {
+  .item {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .item {
+    width: 270px;
+  }
 }
 
 .advantages .title {
@@ -437,12 +459,6 @@ address {
 
 .section .our-team {
   background-color: #F5F4FA;
-}
-
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .img {
