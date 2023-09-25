@@ -177,6 +177,11 @@ h3 {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .hero.section {
   background-color: var(--hero-background);
   background-size: cover;
