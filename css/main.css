@@ -107,6 +107,18 @@
   padding-bottom: 25px;
 }
 
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.menu-btn {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -827,7 +839,7 @@ textarea {
   margin: 15px;
 }
 
-button {
+.button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
