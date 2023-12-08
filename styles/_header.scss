@@ -1,3 +1,7 @@
+.header{
+  position: relative;
+}
+
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -11,9 +15,19 @@
     }
    
   }
-  
-  
-  
+
+  .nav-list{
+    position: absolute;
+    top: 33px;
+  }
+  .contacts-list{
+    position: absolute;
+    top: 33px;
+    right: 115px;
+  }
+
+
+
   .nav-link,.contacts-link{
     font-weight: 500;
     font-size: 14px;
@@ -126,7 +140,20 @@ box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16), 0px 2px 4px 0px rgba(0, 0, 0, 0
   }
 
 }
+.nav-link{
+  @media screen and (min-width:$mobile){
+    
 
+  }
+}
+
+.burger-icon{
+  @media screen and (min-width:$mobile){
+    
+
+  }
+
+}
 .icon-close{
   display: none;
 }

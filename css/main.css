@@ -8,6 +8,10 @@
   --hero-background: #2F303A;
 }
 
+.header {
+  position: relative;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -17,6 +21,17 @@
 }
 .logo > span {
   color: var(--logo-color);
+}
+
+.nav-list {
+  position: absolute;
+  top: 33px;
+}
+
+.contacts-list {
+  position: absolute;
+  top: 33px;
+  right: 115px;
 }
 
 .nav-link, .contacts-link {
@@ -274,6 +289,7 @@ h1 {
 }
 
 .hero-button {
+  position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -295,12 +311,18 @@ h1 {
 }
 
 .open-modal {
+  position: absolute;
+  right: 735px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 32px;
 }
 
 .hero {
@@ -409,13 +431,15 @@ h1 {
   background-repeat: no-repeat;
 }
 
-.team-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .border {
@@ -663,6 +687,12 @@ nav {
 .pr-list a:hover .netwr,
 .pr-list a:focus .netwr {
   fill: var(--background-color);
+}
+
+@media screen and (max-width: 480px) {
+  .wwd {
+    opacity: 0;
+  }
 }
 
 .what-we-do .text {
